@@ -149,7 +149,7 @@ const projectsData = [
     category: 'utility',
     featured: false,
     icon: 'calculator',
-    description: 'Milk Rate Calculator and Dairy Ledger — Fat, SNF, and CLR-based pricing calculator with daily farmer ledger, billing, receipt printing, and WhatsApp sharing. Works 100% offline.',
+    description: 'Milk Rate Calculator and Dairy Ledger - Fat, SNF, and CLR-based pricing calculator with daily farmer ledger, billing, receipt printing, and WhatsApp sharing. Works 100% offline.',
     language: 'HTML/JS',
     tags: ['Dairy Ledger', 'Fat/SNF Rates', 'WhatsApp Sharing'],
     liveUrl: 'https://beginneraman.github.io/milk-rate-calculator/',
@@ -165,17 +165,6 @@ const projectsData = [
     tags: ['Pomodoro', 'Soundscapes', 'Study Suite'],
     liveUrl: 'https://beginneraman.github.io/aman-playlist-hub/',
     repoUrl: 'https://github.com/BeginnerAman/aman-playlist-hub'
-  },
-  {
-    name: 'Image Compressor',
-    category: 'utility',
-    featured: false,
-    icon: 'minimize-2',
-    description: 'A client-side utility tool to optimize and compress image files (PNG/JPEG/WebP) directly in the browser before web uploads, saving bandwidth without quality loss.',
-    language: 'JavaScript',
-    tags: ['Client-Side', 'Image Compression', '100% Offline'],
-    liveUrl: '',
-    repoUrl: 'https://github.com/BeginnerAman/image-compressor'
   },
 
   // ─── CREATIVE & INTERACTIVE ───
@@ -211,6 +200,7 @@ let currentSearch = '';
 const projectsGrid = document.getElementById('projectsGrid');
 const filterButtons = document.querySelectorAll('.filter-btn');
 const projectSearchInput = document.getElementById('projectSearch');
+const searchClearBtn = document.getElementById('searchClear');
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
@@ -414,6 +404,39 @@ function renderProjects(filter = currentFilter, searchTerm = currentSearch) {
 
 
 // ============================================================
+// Filter Category Counts
+// ============================================================
+
+function updateFilterCounts() {
+  const filterNames = {
+    all: 'All',
+    featured: 'Featured',
+    system: 'Desktop & Systems',
+    webapp: 'Web Apps',
+    utility: 'Tools & Utilities',
+    creative: 'Creative'
+  };
+
+  filterButtons.forEach(btn => {
+    const filter = btn.getAttribute('data-filter');
+    let count = 0;
+    if (filter === 'all') {
+      count = projectsData.length;
+    } else if (filter === 'featured') {
+      count = projectsData.filter(p => p.featured).length;
+    } else {
+      count = projectsData.filter(p => p.category === filter).length;
+    }
+
+    const icon = btn.querySelector('i');
+    const iconHtml = icon ? icon.outerHTML + ' ' : '';
+    const label = filterNames[filter] || filter;
+    btn.innerHTML = `${iconHtml}${label} <span class="filter-count">${count}</span>`;
+  });
+}
+
+
+// ============================================================
 // Event Listeners: Filters & Search
 // ============================================================
 
@@ -429,8 +452,21 @@ filterButtons.forEach(btn => {
 
 if (projectSearchInput) {
   projectSearchInput.addEventListener('input', (e) => {
-    renderProjects(currentFilter, e.target.value);
+    const val = e.target.value;
+    if (searchClearBtn) {
+      searchClearBtn.style.display = val ? 'flex' : 'none';
+    }
+    renderProjects(currentFilter, val);
   });
+
+  if (searchClearBtn) {
+    searchClearBtn.addEventListener('click', () => {
+      projectSearchInput.value = '';
+      searchClearBtn.style.display = 'none';
+      renderProjects(currentFilter, '');
+      projectSearchInput.focus();
+    });
+  }
 }
 
 
@@ -583,6 +619,7 @@ function initTypingEffect() {
 // ============================================================
 
 document.addEventListener('DOMContentLoaded', () => {
+  updateFilterCounts();
   renderProjects('all');
   initTypingEffect();
   window.scrollTo({ top: 0, behavior: 'smooth' });
