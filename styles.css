@@ -274,12 +274,23 @@ img {
 
 .typing-cursor {
   display: inline-block;
-  width: 2px;
-  height: 1.2em;
+  width: 3px;
+  height: 1.25em;
   background: var(--accent-secondary);
   margin-left: 4px;
   vertical-align: middle;
-  animation: blink 0.8s infinite;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(162, 155, 254, 0.85);
+  animation: blink 0.8s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 .hero-description {

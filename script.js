@@ -66,11 +66,11 @@ const projectsData = [
   {
     name: 'StorageOrganizer',
     category: 'system',
-    featured: false,
+    featured: true,
     icon: 'hard-drive',
     description: 'Intelligent desktop storage optimization, MD5 deduplication, and automated organization for Windows. 100% offline, privacy-first desktop utility.',
     language: 'Python',
-    tags: ['Python Utility', 'MD5 Deduplication', 'Storage Optimization'],
+    tags: ['Python Utility', 'MD5 Deduplication', 'Storage Optimization', 'Windows Tool'],
     liveUrl: 'https://beginneraman.github.io/StorageOrganizer/',
     repoUrl: 'https://github.com/BeginnerAman/StorageOrganizer'
   },
@@ -567,15 +567,19 @@ function initTypingEffect() {
   if (!typedTextSpan) return;
 
   const textArray = [
-    'Idea-Driven Developer',
-    'AI-Collaborative Systems Builder',
-    'Creator of ADrop & AirDeck',
-    'Offline-First & Windows Tool Architect',
-    '35+ Public Open-Source Repositories'
+    'Idea-First Developer & Product Architect',
+    'Creator of ADrop - 150+ MB/s Offline File Transfer',
+    'Creator of AirDeck - Wireless Windows Hardware Bridge',
+    'Architect of VastraFlow - Offline POS & Retail Billing',
+    'Building RenameSense & smart-file-sync Engines',
+    'StorageOrganizer & Intelligent Desktop Utilities',
+    '100% Offline-First & Privacy-Focused Systems',
+    'Leveraging AI as an Engineering Superpower',
+    '35+ Open Source Repositories on GitHub'
   ];
-  const typingDelay = 90;
-  const erasingDelay = 40;
-  const newTextDelay = 1800;
+  const typingDelay = 70;
+  const erasingDelay = 35;
+  const newTextDelay = 2100;
   let textArrayIndex = 0;
   let charIndex = 0;
 
