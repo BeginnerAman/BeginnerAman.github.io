@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aman Vishwakarma (BeginnerAman) - Full Stack Developer Portfolio &amp; Projects</title>
-    <meta name="description" content="Official developer portfolio of Aman Vishwakarma (BeginnerAman). Explore 27+ public projects including ADrop (ultra-fast offline file transfer), LuxeStay Hotel, group messaging platforms, games, and web tools.">
-    <meta name="keywords" content="Aman Vishwakarma, BeginnerAman, BeginnerAman GitHub, Aman Vishwakarma Portfolio, Full Stack Developer India, ADrop, ADrop File Transfer, Open Source Projects, Web Developer Portfolio, JavaScript Developer, Software Engineer">
+    <title>Aman Vishwakarma (BeginnerAman) - Full Stack Developer Portfolio &amp; Systems Builder</title>
+    <meta name="description" content="Official developer portfolio of Aman Vishwakarma (BeginnerAman). Explore 35+ public projects including ADrop (ultra-fast offline file transfer), AirDeck, RenameSense, VastraFlow, smart-file-sync, and developer tools.">
+    <meta name="keywords" content="Aman Vishwakarma, BeginnerAman, BeginnerAman GitHub, Aman Vishwakarma Portfolio, Full Stack Developer India, ADrop, AirDeck, RenameSense, smart-file-sync, VastraFlow, Open Source Projects, Web Developer Portfolio, JavaScript Developer, Python Developer">
     <meta name="author" content="Aman Vishwakarma (BeginnerAman)">
     <meta property="og:site_name" content="Aman Vishwakarma Portfolio">
-    <meta property="og:title" content="Aman Vishwakarma (BeginnerAman) - Full Stack Developer Portfolio">
-    <meta property="og:description" content="Explore 27+ public projects by Aman Vishwakarma (BeginnerAman) including ADrop, LuxeStay Hotel, group messaging platforms, games, and web tools.">
+    <meta property="og:title" content="Aman Vishwakarma (BeginnerAman) - Developer Portfolio &amp; Systems Builder">
+    <meta property="og:description" content="Explore 35+ public projects by Aman Vishwakarma (BeginnerAman) including ADrop, AirDeck, RenameSense, VastraFlow, smart-file-sync, LuxeStay Hotel, and tools.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://beginneraman.github.io/Portfolio/">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Aman Vishwakarma (BeginnerAman) - Developer Portfolio">
-    <meta name="twitter:description" content="Explore 27+ web applications and open-source tools built by Aman Vishwakarma (BeginnerAman).">
+    <meta name="twitter:description" content="Explore 35+ web applications, offline systems, and open-source tools built by Aman Vishwakarma (BeginnerAman).">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236c5ce7' stroke-width='2.25' stroke-linecap='round' stroke-linejoin='round'><polyline points='4 17 10 11 4 5'/><line x1='12' x2='20' y1='19' y2='19'/></svg>">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -70,7 +70,7 @@
                 <p class="hero-greeting">Hello, I'm</p>
                 <h1 class="hero-title"><span class="gradient-text">Aman Vishwakarma</span> <span class="subtitle-handle">(BeginnerAman)</span></h1>
                 <p class="hero-subtitle"><span id="typedText"></span><span class="typing-cursor"></span></p>
-                <p class="hero-description">Crafting beautiful and functional web applications with passion and creativity. From real-time chat platforms to interactive games - explore my work below.</p>
+                <p class="hero-description">Architecting high-performance offline systems, developer tools, and full-stack web applications. An idea-first software builder co-engineering with AI at high velocity.</p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">
                         <i class="fas fa-rocket"></i> View My Work
@@ -93,8 +93,16 @@
     <section id="projects" class="projects">
         <div class="container">
             <div class="section-header">
-                <h2>My Projects</h2>
-                <p>Explore my collection of 27+ public repositories - click any project to see it live!</p>
+                <h2>Featured Projects</h2>
+                <p>Explore high-impact repositories — offline file engines, Windows bridges, POS software &amp; web apps.</p>
+            </div>
+
+            <!-- Instant Search Bar -->
+            <div class="search-container">
+                <div class="search-input-wrapper">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="projectSearch" class="search-input" placeholder="Search projects by name, keyword, or tech (e.g. Python, Offline, POS, PWA)..." autocomplete="off">
+                </div>
             </div>
 
             <!-- Filter Buttons -->
@@ -102,20 +110,20 @@
                 <button class="filter-btn active" data-filter="all">
                     <i class="fas fa-th"></i> All
                 </button>
-                <button class="filter-btn" data-filter="chat">
-                    <i class="fas fa-comments"></i> Chat Apps
+                <button class="filter-btn" data-filter="featured">
+                    <i class="fas fa-star"></i> Featured
                 </button>
-                <button class="filter-btn" data-filter="game">
-                    <i class="fas fa-gamepad"></i> Games
-                </button>
-                <button class="filter-btn" data-filter="utility">
-                    <i class="fas fa-tools"></i> Tools
+                <button class="filter-btn" data-filter="system">
+                    <i class="fas fa-desktop"></i> Desktop &amp; Systems
                 </button>
                 <button class="filter-btn" data-filter="webapp">
                     <i class="fas fa-globe"></i> Web Apps
                 </button>
-                <button class="filter-btn" data-filter="birthday">
-                    <i class="fas fa-gift"></i> Birthday
+                <button class="filter-btn" data-filter="utility">
+                    <i class="fas fa-tools"></i> Tools &amp; Utilities
+                </button>
+                <button class="filter-btn" data-filter="creative">
+                    <i class="fas fa-wand-magic-sparkles"></i> Creative
                 </button>
             </div>
 
@@ -132,41 +140,53 @@
         <div class="container">
             <div class="section-header">
                 <h2>About Me</h2>
-                <p>Get to know more about my journey and skills</p>
+                <p>Get to know my journey, engineering philosophy, and stack</p>
             </div>
 
             <div class="about-content">
                 <div class="about-text">
-                    <h3>Idea-First Developer &amp; Problem Solver</h3>
-                    <p>I'm an idea-first developer and problem solver with a passion for bringing creative concepts to life. I focus on product architecture, user experience, and application design, leveraging AI tools to co-engineer software at high velocity.</p>
-                    <p>My journey is driven by curiosity and problem-solving, evolving into a collection of 27+ public repositories. Each project represents continuous learning, innovative tools, and software craftsmanship.</p>
+                    <h3>Idea-First Developer &amp; Systems Builder</h3>
+                    <p>I'm an idea-first developer and software builder passionate about solving real-world friction. I focus on product architecture, offline-first reliability, and seamless user experiences, leveraging AI tools as a multiplier to co-engineer and deploy systems at high velocity.</p>
+                    <p>My work spans 35+ public repositories — ranging from low-level offline delta sync engines and wireless device controllers to commercial-grade retail POS systems and interactive developer suites. Each project represents continuous learning, innovative utility, and thoughtful craftsmanship.</p>
 
                     <div class="skills-section">
                         <h4>Skills &amp; Technologies</h4>
                         <div class="skills-grid">
                             <div class="skill-item">
-                                <i class="fab fa-html5"></i>
-                                <span>HTML5</span>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fab fa-css3-alt"></i>
-                                <span>CSS3</span>
+                                <i class="fab fa-python"></i>
+                                <span>Python</span>
                             </div>
                             <div class="skill-item">
                                 <i class="fab fa-js"></i>
                                 <span>JavaScript</span>
                             </div>
                             <div class="skill-item">
-                                <i class="fab fa-python"></i>
-                                <span>Python</span>
+                                <i class="fab fa-html5"></i>
+                                <span>HTML5 / CSS3</span>
                             </div>
                             <div class="skill-item">
-                                <i class="fas fa-database"></i>
-                                <span>SQL</span>
+                                <i class="fas fa-wand-magic-sparkles"></i>
+                                <span>AI Co-Engineering</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-network-wired"></i>
+                                <span>Systems &amp; Sockets</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-bolt"></i>
+                                <span>Offline-First Arch</span>
                             </div>
                             <div class="skill-item">
                                 <i class="fab fa-git-alt"></i>
-                                <span>Git</span>
+                                <span>Git &amp; GitHub</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-database"></i>
+                                <span>SQL &amp; Firebase</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-windows"></i>
+                                <span>Windows Engine</span>
                             </div>
                         </div>
                     </div>
@@ -174,20 +194,20 @@
 
                 <div class="stats-grid">
                     <div class="stat-card">
-                        <div class="stat-number">27+</div>
-                        <div class="stat-label">Public Projects</div>
+                        <div class="stat-number">35+</div>
+                        <div class="stat-label">Public Repositories</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number">5+</div>
-                        <div class="stat-label">Chat Apps</div>
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Production Apps &amp; Tools</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number">8+</div>
-                        <div class="stat-label">Games Built</div>
+                        <div class="stat-number">150+ MB/s</div>
+                        <div class="stat-label">ADrop Transfer Engine</div>
                     </div>
                     <div class="stat-card">
                         <div class="stat-number">100%</div>
-                        <div class="stat-label">Dedication</div>
+                        <div class="stat-label">Offline-First &amp; Open Source</div>
                     </div>
                 </div>
             </div>
@@ -215,7 +235,7 @@
                         <i class="fas fa-envelope"></i>
                         <div>
                             <h4>Email</h4>
-                            <p>your.email@example.com</p>
+                            <p><a href="mailto:avstudy547@gmail.com" style="color: inherit;">avstudy547@gmail.com</a></p>
                         </div>
                     </div>
                 </div>

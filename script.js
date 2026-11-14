@@ -1,209 +1,218 @@
 // ============================================================
 // Developer Portfolio - Main JavaScript
+// Aman Vishwakarma (BeginnerAman)
 // ============================================================
 
-// ── Project Data ─────────────────────────────────────────────
+// ── Project Data (Curated High-Value Repositories) ───────────
 const projectsData = [
-  // ─── FEATURED / FLAGSHIP PROJECT ───
+  // ─── FEATURED / FLAGSHIP SYSTEMS ───
   {
     name: 'ADrop - Ultra Fast File Transfer',
-    category: 'utility',
+    category: 'system',
+    featured: true,
     icon: 'zap',
-    description: 'Transfer files between phone and PC at 150+ MB/s - no internet, no cables, no apps to install. QR code connection, smart clipboard, media preview, and resumable uploads.',
+    description: 'Transfer files between phone and PC at 150+ MB/s without internet, cables, or apps to install. Ultra-fast offline local file sharing over WiFi with QR code pairing, smart clipboard, resumable uploads, and server recovery.',
     language: 'JavaScript',
+    tags: ['Offline-First', 'P2P Sharing', 'WebSockets'],
     liveUrl: 'https://beginneraman.github.io/ADrop/',
     repoUrl: 'https://github.com/BeginnerAman/ADrop'
   },
-
-  // ─── TOP FEATURED PROJECTS ───
   {
-    name: 'Group Messaging Platform',
-    category: 'chat',
-    icon: 'users',
-    description: 'Collaborative group messaging app for team communication',
-    language: 'JavaScript',
-    liveUrl: 'https://beginneraman.github.io/group-messaging-platform/',
-    repoUrl: 'https://github.com/BeginnerAman/group-messaging-platform'
+    name: 'AirDeck - Wireless Hardware Bridge',
+    category: 'system',
+    featured: true,
+    icon: 'radio',
+    description: 'Wireless hardware companion bridge and modular controller suite for Windows. Turn any smartphone or tablet into a high-performance trackpad, macro stream deck, numeric keypad, presentation remote, virtual webcam, and studio microphone without installing any mobile apps.',
+    language: 'Python',
+    tags: ['Windows Engine', 'Wireless Bridge', 'Hardware Control'],
+    liveUrl: 'https://beginneraman.github.io/AirDeck/',
+    repoUrl: 'https://github.com/BeginnerAman/AirDeck'
   },
   {
+    name: 'RenameSense - Batch File Renamer',
+    category: 'system',
+    featured: true,
+    icon: 'file-edit',
+    description: 'Enterprise-grade, safe, and offline-first batch file renamer for Windows 10 & 11 with dynamic templates, sequential regex pipelines, and 1-click WAL transaction rollback for absolute data protection.',
+    language: 'HTML/JS',
+    tags: ['Offline-First', 'WAL Rollback', 'Regex Pipeline'],
+    liveUrl: 'https://beginneraman.github.io/RenameSense/',
+    repoUrl: 'https://github.com/BeginnerAman/RenameSense'
+  },
+  {
+    name: 'smart-file-sync Engine',
+    category: 'system',
+    featured: true,
+    icon: 'refresh-cw',
+    description: 'High-performance, 100% offline file synchronization engine for Windows with block-level delta transfers, real-time filesystem watcher, USB auto-detect, and atomic safe writes.',
+    language: 'Python',
+    tags: ['Delta Transfers', 'Filesystem Watcher', 'Atomic Writes'],
+    liveUrl: 'https://beginneraman.github.io/smart-file-sync/',
+    repoUrl: 'https://github.com/BeginnerAman/smart-file-sync'
+  },
+  {
+    name: 'VastraFlow - Retail POS & Inventory',
+    category: 'webapp',
+    featured: true,
+    icon: 'shopping-bag',
+    description: '100% Offline POS, barcode billing, and inventory management software designed for retail clothing shops, garment stores, and saree showrooms with thermal receipt printing.',
+    language: 'HTML/JS',
+    tags: ['Offline POS', 'Barcode Billing', 'Inventory Engine'],
+    liveUrl: 'https://beginneraman.github.io/VastraFlow/',
+    repoUrl: 'https://github.com/BeginnerAman/VastraFlow'
+  },
+
+  // ─── DESKTOP & SYSTEM TOOLS ───
+  {
+    name: 'StorageOrganizer',
+    category: 'system',
+    featured: false,
+    icon: 'hard-drive',
+    description: 'Intelligent desktop storage optimization, MD5 deduplication, and automated organization for Windows. 100% offline, privacy-first desktop utility.',
+    language: 'Python',
+    tags: ['MD5 Deduplication', 'Storage Optimization', 'Windows Utility'],
+    liveUrl: 'https://beginneraman.github.io/StorageOrganizer/',
+    repoUrl: 'https://github.com/BeginnerAman/StorageOrganizer'
+  },
+
+  // ─── WEB APPS & SAAS ───
+  {
     name: 'Resume Forge Pro',
-    category: 'utility',
+    category: 'webapp',
+    featured: false,
     icon: 'file-text',
-    description: 'Professional resume builder with modern templates and easy customization',
+    description: 'A high-speed 1-page A4 ATS-friendly Resume & Biodata Builder with 20 executive templates, real-time live preview editor, and 4K vector PDF export.',
     language: 'JavaScript',
-    liveUrl: 'https://beginneraman.github.io/resume-forge-pro/',
+    tags: ['ATS-Friendly', 'PDF Vector Export', 'Live Editor'],
+    liveUrl: 'https://beginneraman.github.io/resume-forge-pro',
     repoUrl: 'https://github.com/BeginnerAman/resume-forge-pro'
   },
   {
-    name: 'LuxeStay Hotel',
+    name: 'LuxeStay Hotel Booking',
     category: 'webapp',
+    featured: false,
     icon: 'building-2',
-    description: 'Premium hotel booking website with elegant design and features',
+    description: 'A premium web application for room reservations and hotel booking featuring room filtering, amenities showcase, and fully responsive UX deployed on Vercel.',
     language: 'JavaScript',
+    tags: ['Vercel Deployed', 'Hotel Booking', 'Responsive UX'],
     liveUrl: 'https://luxe-stay-hotel-weld.vercel.app',
     repoUrl: 'https://github.com/BeginnerAman/LuxeStay-Hotel'
   },
   {
-    name: 'Data Wizard Hub',
-    category: 'utility',
-    icon: 'database',
-    description: 'Powerful data management and visualization hub for analytics',
+    name: 'Group Messaging Platform',
+    category: 'webapp',
+    featured: false,
+    icon: 'users',
+    description: 'A real-time group messaging platform built with Firebase Realtime Database and vanilla web technologies. Fully installable as a Progressive Web App (PWA) with offline caching.',
     language: 'JavaScript',
-    liveUrl: 'https://beginneraman.github.io/data-wizard-hub/',
-    repoUrl: 'https://github.com/BeginnerAman/data-wizard-hub'
+    tags: ['Firebase DB', 'PWA', 'Real-Time Messaging'],
+    liveUrl: 'https://beginneraman.github.io/group-messaging-platform/',
+    repoUrl: 'https://github.com/BeginnerAman/group-messaging-platform'
   },
   {
-    name: 'Garden Groves Banquet',
+    name: 'ShayariVerse',
     category: 'webapp',
+    featured: false,
+    icon: 'book-open',
+    description: 'A modern Hindi/Urdu poetry and literature web app featuring ambient audio soundscapes, reels view, interactive themes, and instant search.',
+    language: 'HTML/JS',
+    tags: ['Ambient Audio', 'Poetry Reels', 'Instant Search'],
+    liveUrl: 'https://beginneraman.github.io/ShayariVerse/',
+    repoUrl: 'https://github.com/BeginnerAman/ShayariVerse'
+  },
+  {
+    name: 'Garden Groves Banquet Bar',
+    category: 'webapp',
+    featured: false,
     icon: 'trees',
-    description: 'Beautiful banquet hall and event venue showcase website',
-    language: 'CSS',
+    description: 'Modern luxury hotel and event venue showcase website featuring elegant landing pages, interactive room catalogs, and event planning inquiries.',
+    language: 'CSS/JS',
+    tags: ['Venue Showcase', 'Landing Page', 'Event Booking'],
     liveUrl: 'https://beginneraman.github.io/garden-groves-banquet-bar/',
     repoUrl: 'https://github.com/BeginnerAman/garden-groves-banquet-bar'
   },
 
-  // ─── Games & Fun ───
+  // ─── UTILITIES & PRODUCTIVITY ───
   {
-    name: 'Roast & Reveal',
-    category: 'game',
-    icon: 'flame',
-    description: 'Fun roasting game that reveals hilarious facts about your friends',
-    language: 'JavaScript',
-    liveUrl: 'https://beginneraman.github.io/roast-and-reveal/',
-    repoUrl: 'https://github.com/BeginnerAman/roast-and-reveal'
-  },
-  {
-    name: 'Roast & Guess',
-    category: 'game',
-    icon: 'target',
-    description: 'Interactive guessing game with roast-style challenges',
-    language: 'HTML',
-    liveUrl: 'https://beginneraman.github.io/roast-and-guess/',
-    repoUrl: 'https://github.com/BeginnerAman/roast-and-guess'
-  },
-  {
-    name: 'Party Roast Multiplayer',
-    category: 'game',
-    icon: 'party-popper',
-    description: 'Multiplayer party game with roasting rounds for group fun',
-    language: 'JavaScript',
-    liveUrl: 'https://beginneraman.github.io/party-roast-multiplayer/',
-    repoUrl: 'https://github.com/BeginnerAman/party-roast-multiplayer'
-  },
-  {
-    name: 'Speed Typer Pro',
-    category: 'game',
-    icon: 'keyboard',
-    description: 'Test your typing speed with challenging texts and leaderboards',
-    language: 'JavaScript',
-    liveUrl: 'https://beginneraman.github.io/speed-typer-pro/',
-    repoUrl: 'https://github.com/BeginnerAman/speed-typer-pro'
-  },
-  {
-    name: 'Fake Hacker Terminal',
-    category: 'game',
-    icon: 'terminal',
-    description: 'Realistic hacker terminal simulator for fun and pranks',
-    language: 'JavaScript',
-    liveUrl: 'https://beginneraman.github.io/fake-hacker-terminal/',
-    repoUrl: 'https://github.com/BeginnerAman/fake-hacker-terminal'
-  },
-  {
-    name: 'Best Friend Match Quiz',
-    category: 'game',
-    icon: 'heart-handshake',
-    description: 'Find out who your best friend really is with this fun quiz',
-    language: 'HTML',
-    liveUrl: 'https://beginneraman.github.io/best-friend-match-quiz/',
-    repoUrl: 'https://github.com/BeginnerAman/best-friend-match-quiz'
-  },
-  {
-    name: 'Catch Me If You Can',
-    category: 'game',
-    icon: 'footprints',
-    description: 'Exciting chase game with BFF mode for competitive fun',
-    language: 'HTML',
-    liveUrl: 'https://beginneraman.github.io/catch-me-if-you-can-bff/',
-    repoUrl: 'https://github.com/BeginnerAman/catch-me-if-you-can-bff'
-  },
-  {
-    name: 'Typing Game',
-    category: 'game',
-    icon: 'gamepad-2',
-    description: 'Classic typing game to improve your typing accuracy and speed',
-    language: 'JavaScript',
-    liveUrl: 'https://beginneraman.github.io/typing_game/',
-    repoUrl: 'https://github.com/BeginnerAman/typing_game'
-  },
-
-  // ─── Utility & Web Apps ───
-  {
-    name: 'Dairy Price Calculator',
+    name: 'Data Wizard Hub',
     category: 'utility',
-    icon: 'calculator',
-    description: 'Calculate dairy product prices with smart rate computation',
-    language: 'HTML',
-    liveUrl: 'https://beginneraman.github.io/dairy-price-calculator/',
-    repoUrl: 'https://github.com/BeginnerAman/dairy-price-calculator'
+    featured: false,
+    icon: 'database',
+    description: 'The ultimate 500+ data science tricks platform featuring interactive flashcards, 10-stage Data Analyst framework, and 8-stage Machine Learning pipeline.',
+    language: 'HTML/JS',
+    tags: ['Data Science', 'ML Pipeline', '500+ Tricks'],
+    liveUrl: 'https://beginneraman.github.io/data-wizard-hub/',
+    repoUrl: 'https://github.com/BeginnerAman/data-wizard-hub'
   },
   {
-    name: 'Aman Playlist Hub',
-    category: 'webapp',
-    icon: 'music',
-    description: 'Curated YouTube playlist showcase with modern, sleek interface',
+    name: 'Milk Rate Calculator & Ledger',
+    category: 'utility',
+    featured: false,
+    icon: 'calculator',
+    description: 'Milk Rate Calculator and Dairy Ledger — Fat, SNF, and CLR-based pricing calculator with daily farmer ledger, billing, receipt printing, and WhatsApp sharing. Works 100% offline.',
+    language: 'HTML/JS',
+    tags: ['Dairy Ledger', 'Fat/SNF Rates', 'WhatsApp Sharing'],
+    liveUrl: 'https://beginneraman.github.io/milk-rate-calculator/',
+    repoUrl: 'https://github.com/BeginnerAman/milk-rate-calculator'
+  },
+  {
+    name: 'ProVault Hub (Playlist Suite)',
+    category: 'utility',
+    featured: false,
+    icon: 'play-square',
+    description: 'High-end bespoke YouTube playlist vault and study suite with Pomodoro timer, A-B segment looper, Web Audio focus soundscapes, speed engine, and notes.',
     language: 'JavaScript',
+    tags: ['Pomodoro', 'Soundscapes', 'Study Suite'],
     liveUrl: 'https://beginneraman.github.io/aman-playlist-hub/',
     repoUrl: 'https://github.com/BeginnerAman/aman-playlist-hub'
   },
-
-  // ─── Birthday & Special ───
   {
-    name: 'Birthday Wishes - Ayush',
-    category: 'birthday',
-    icon: 'cake',
-    description: 'Interactive birthday celebration page for Ayush',
-    language: 'HTML',
-    liveUrl: 'https://beginneraman.github.io/birthday-wishes-ayush/',
-    repoUrl: 'https://github.com/BeginnerAman/birthday-wishes-ayush'
+    name: 'Image Compressor',
+    category: 'utility',
+    featured: false,
+    icon: 'minimize-2',
+    description: 'A client-side utility tool to optimize and compress image files (PNG/JPEG/WebP) directly in the browser before web uploads, saving bandwidth without quality loss.',
+    language: 'JavaScript',
+    tags: ['Client-Side', 'Image Compression', '100% Offline'],
+    liveUrl: '',
+    repoUrl: 'https://github.com/BeginnerAman/image-compressor'
+  },
+
+  // ─── CREATIVE & INTERACTIVE ───
+  {
+    name: 'Loopi - Motion DP Studio',
+    category: 'creative',
+    featured: false,
+    icon: 'sparkles',
+    description: 'Animated 1:1 Profile Picture (DP) and Motion Studio with particle physics, typography engine, customizable frames, and watermark-free GIF/MP4 export.',
+    language: 'JavaScript',
+    tags: ['Particle Physics', 'Motion Graphics', 'GIF Export'],
+    liveUrl: 'https://beginneraman.github.io/Loopi/',
+    repoUrl: 'https://github.com/BeginnerAman/Loopi'
   },
   {
-    name: 'Happy Birthday - N',
-    category: 'birthday',
-    icon: 'gift',
-    description: 'Special animated birthday greeting with stunning effects',
-    language: 'CSS',
-    liveUrl: 'https://beginneraman.github.io/happy_birthday-n/',
-    repoUrl: 'https://github.com/BeginnerAman/happy_birthday-n'
+    name: 'Fake Hacker Terminal',
+    category: 'creative',
+    featured: false,
+    icon: 'terminal',
+    description: 'A simulated command-line hacker console prank with custom scripts, interactive keystroke streaming, and retro green terminal animations.',
+    language: 'JavaScript',
+    tags: ['CLI Simulator', 'Terminal FX', 'Interactive Prank'],
+    liveUrl: 'https://beginneraman.github.io/fake-hacker-terminal/',
+    repoUrl: 'https://github.com/BeginnerAman/fake-hacker-terminal'
   }
 ];
 
 
-// ── DOM Element References ───────────────────────────────────
+// ── State & DOM References ───────────────────────────────────
+let currentFilter = 'all';
+let currentSearch = '';
+
 const projectsGrid = document.getElementById('projectsGrid');
 const filterButtons = document.querySelectorAll('.filter-btn');
+const projectSearchInput = document.getElementById('projectSearch');
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
-
-
-// ============================================================
-// Category Name Mapping
-// ============================================================
-
-/**
- * Returns a human-readable label for a given category key.
- * @param {string} category - The category identifier
- * @returns {string} Readable category name
- */
-function getCategoryName(category) {
-  const names = {
-    chat: 'Chat App',
-    game: 'Game',
-    utility: 'Utility',
-    webapp: 'Web App',
-    birthday: 'Birthday Special'
-  };
-  return names[category] || category;
-}
 
 
 // ============================================================
@@ -212,7 +221,7 @@ function getCategoryName(category) {
 
 /**
  * Creates a single project card DOM element.
- * Uses Lucide icons instead of emojis for a professional look.
+ * Uses Lucide icons, category badges, tags, and action buttons.
  *
  * @param {Object} project - Project data object
  * @returns {HTMLElement} The constructed card element
@@ -232,12 +241,23 @@ function createProjectCard(project) {
   iconEl.setAttribute('data-lucide', project.icon);
   iconWrapper.appendChild(iconEl);
 
+  const badgesContainer = document.createElement('div');
+  badgesContainer.className = 'badges-container';
+
+  if (project.featured) {
+    const featBadge = document.createElement('span');
+    featBadge.className = 'featured-badge';
+    featBadge.innerHTML = '<i class="fas fa-star"></i> Featured';
+    badgesContainer.appendChild(featBadge);
+  }
+
   const badge = document.createElement('span');
   badge.className = 'tech-badge';
   badge.textContent = project.language;
+  badgesContainer.appendChild(badge);
 
   header.appendChild(iconWrapper);
-  header.appendChild(badge);
+  header.appendChild(badgesContainer);
 
   // ── Card Body ──
   const body = document.createElement('div');
@@ -253,6 +273,19 @@ function createProjectCard(project) {
 
   body.appendChild(title);
   body.appendChild(desc);
+
+  // Feature Tags
+  if (project.tags && project.tags.length > 0) {
+    const tagsWrapper = document.createElement('div');
+    tagsWrapper.className = 'project-tags';
+    project.tags.forEach(tag => {
+      const tagSpan = document.createElement('span');
+      tagSpan.className = 'project-tag';
+      tagSpan.textContent = tag;
+      tagsWrapper.appendChild(tagSpan);
+    });
+    body.appendChild(tagsWrapper);
+  }
 
   // ── Card Footer ──
   const footer = document.createElement('div');
@@ -293,7 +326,7 @@ function createProjectCard(project) {
   card.appendChild(body);
   card.appendChild(footer);
 
-  // ── Make entire card clickable for live projects ──
+  // ── Clickable Card Action ──
   if (project.liveUrl) {
     card.style.cursor = 'pointer';
     card.addEventListener('click', (e) => {
@@ -309,43 +342,71 @@ function createProjectCard(project) {
 
 
 // ============================================================
-// Render Projects into the Grid
+// Render Projects (Filter & Instant Search)
 // ============================================================
 
 /**
- * Renders project cards into the grid, optionally filtered by category.
- * Cards appear with a staggered fade-in animation.
+ * Renders project cards into the grid, filtered by category and search term.
  *
- * @param {string} filter - Category to filter by, or 'all'
+ * @param {string} filter - Category to filter by, or 'all' / 'featured'
+ * @param {string} searchTerm - Search query to match
  */
-function renderProjects(filter = 'all') {
-  // Clear existing cards
+function renderProjects(filter = currentFilter, searchTerm = currentSearch) {
+  currentFilter = filter;
+  currentSearch = typeof searchTerm === 'string' ? searchTerm.trim().toLowerCase() : '';
+
   projectsGrid.innerHTML = '';
 
-  // Determine which projects to show
-  const filtered = filter === 'all'
-    ? projectsData
-    : projectsData.filter(p => p.category === filter);
+  let filtered = projectsData;
 
-  // Build each card with staggered animation delay
+  // 1. Category Filtering
+  if (currentFilter === 'featured') {
+    filtered = filtered.filter(p => p.featured);
+  } else if (currentFilter !== 'all') {
+    filtered = filtered.filter(p => p.category === currentFilter);
+  }
+
+  // 2. Search Query Filtering
+  if (currentSearch) {
+    filtered = filtered.filter(p => {
+      const nameMatch = p.name.toLowerCase().includes(currentSearch);
+      const descMatch = p.description.toLowerCase().includes(currentSearch);
+      const langMatch = p.language.toLowerCase().includes(currentSearch);
+      const tagsMatch = p.tags && p.tags.some(t => t.toLowerCase().includes(currentSearch));
+      return nameMatch || descMatch || langMatch || tagsMatch;
+    });
+  }
+
+  // 3. Empty State Handling
+  if (filtered.length === 0) {
+    const emptyEl = document.createElement('div');
+    emptyEl.className = 'no-results';
+    emptyEl.innerHTML = `
+      <i class="fas fa-search"></i>
+      <h3 style="margin-bottom: 8px; color: var(--text-primary);">No matching projects found</h3>
+      <p>Try searching with another keyword like "Python", "Offline", "POS", or clear the filter.</p>
+    `;
+    projectsGrid.appendChild(emptyEl);
+    return;
+  }
+
+  // 4. Staggered Render
   filtered.forEach((project, index) => {
     const card = createProjectCard(project);
 
-    // Start invisible for the animation
     card.style.opacity = '0';
-    card.style.transform = 'translateY(20px)';
+    card.style.transform = 'translateY(16px)';
 
     projectsGrid.appendChild(card);
 
-    // Stagger the fade-in so cards cascade into view
     setTimeout(() => {
-      card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+      card.style.transition = 'opacity 0.35s ease, transform 0.35s ease';
       card.style.opacity = '1';
       card.style.transform = 'translateY(0)';
-    }, index * 100);
+    }, Math.min(index * 40, 500));
   });
 
-  // Initialize Lucide icons after DOM is updated
+  // Reinitialize Lucide icons
   if (typeof lucide !== 'undefined') {
     lucide.createIcons();
   }
@@ -353,20 +414,24 @@ function renderProjects(filter = 'all') {
 
 
 // ============================================================
-// Filter Button Handlers
+// Event Listeners: Filters & Search
 // ============================================================
 
 filterButtons.forEach(btn => {
   btn.addEventListener('click', () => {
-    // Swap the active state
     filterButtons.forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
 
-    // Re-render with the chosen filter
     const filter = btn.getAttribute('data-filter') || 'all';
-    renderProjects(filter);
+    renderProjects(filter, currentSearch);
   });
 });
+
+if (projectSearchInput) {
+  projectSearchInput.addEventListener('input', (e) => {
+    renderProjects(currentFilter, e.target.value);
+  });
+}
 
 
 // ============================================================
@@ -374,12 +439,10 @@ filterButtons.forEach(btn => {
 // ============================================================
 
 if (hamburger && navMenu) {
-  // Toggle mobile menu open / close
   hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('active');
   });
 
-  // Close menu when any navigation link inside it is clicked
   navMenu.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       navMenu.classList.remove('active');
@@ -395,7 +458,7 @@ if (hamburger && navMenu) {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', (e) => {
     const targetId = anchor.getAttribute('href');
-    if (targetId === '#') return; // skip bare "#" links
+    if (targetId === '#') return;
 
     const targetEl = document.querySelector(targetId);
     if (targetEl) {
@@ -421,7 +484,6 @@ const sectionObserver = new IntersectionObserver(
   { threshold: 0.1 }
 );
 
-// Observe every <section> on the page
 document.querySelectorAll('section').forEach(section => {
   sectionObserver.observe(section);
 });
@@ -431,13 +493,10 @@ document.querySelectorAll('section').forEach(section => {
 // Active Nav-Link Highlighting on Scroll
 // ============================================================
 
-/**
- * Highlights the nav link whose section is currently in view.
- */
 function highlightActiveNavLink() {
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-menu a[href^="#"]');
-  const scrollPos = window.scrollY + 100; // small offset for header height
+  const scrollPos = window.scrollY + 100;
 
   let currentSectionId = '';
 
@@ -462,7 +521,7 @@ window.addEventListener('scroll', highlightActiveNavLink);
 
 
 // ============================================================
-// Close Mobile Menu on Resize (desktop breakpoint)
+// Close Mobile Menu on Resize
 // ============================================================
 
 window.addEventListener('resize', () => {
@@ -476,19 +535,16 @@ window.addEventListener('resize', () => {
 // Hero Subtitle Typing Effect
 // ============================================================
 
-/**
- * Initializes a smooth typing effect for the hero section subtitle.
- */
 function initTypingEffect() {
   const typedTextSpan = document.getElementById('typedText');
   if (!typedTextSpan) return;
 
   const textArray = [
     'Idea-Driven Developer',
-    'AI-Collaborative Builder',
-    'Creator of ADrop',
-    'Problem Solver & Open Source Enthusiast',
-    'Building High-Performance Web Apps'
+    'AI-Collaborative Systems Builder',
+    'Creator of ADrop & AirDeck',
+    'Offline-First & Windows Tool Architect',
+    '35+ Public Open-Source Repositories'
   ];
   const typingDelay = 90;
   const erasingDelay = 40;
@@ -527,12 +583,7 @@ function initTypingEffect() {
 // ============================================================
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Render all projects on first load
   renderProjects('all');
-
-  // Initialize typing animation effect
   initTypingEffect();
-
-  // Scroll to top so the hero section is in view
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
