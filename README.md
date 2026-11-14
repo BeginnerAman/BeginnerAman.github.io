@@ -1,85 +1,36 @@
 # Aman Vishwakarma (BeginnerAman) - Developer Portfolio
 
-A beautiful, responsive portfolio website showcasing all public projects and work. Built with modern web technologies and AI assistance.
+A high-performance, responsive portfolio website showcasing 35+ public projects, offline systems, and web applications. Built with modern vanilla web technologies and AI-collaborative engineering.
 
-**Live Preview**: [GitHub Pages](https://BeginnerAman.github.io/Portfolio)
-
----
-
-## Features
-
-- **Responsive Design** - Works perfectly on desktop, tablet, and mobile
-- **Project Filtering** - Filter projects by category (Chat Apps, Games, Utilities, Special)
-- **Smooth Animations** - Beautiful fade-in and scroll animations
-- **Easy Project Management** - Add/remove projects in seconds
-- **Dark Theme** - Modern dark UI with gradient accents
-- **Social Links** - Connect on GitHub, Twitter, LinkedIn, Instagram
-- **Mobile-Friendly Navigation** - Hamburger menu for mobile devices
-- **Lucide Icons** - Professional SVG icons for a clean, modern look
+**Live Website**: [https://beginneraman.github.io/Portfolio/](https://beginneraman.github.io/Portfolio/)
 
 ---
 
-## How to Use
+## Highlights & Features
 
-### View the Portfolio
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/BeginnerAman/Portfolio.git
-   cd Portfolio
-   ```
-
-2. **Open in browser**:
-   - Simply open `index.html` in your browser
-   - Or use Live Server extension in VS Code
-
-### Deploy on GitHub Pages
-
-1. Go to repository Settings > Pages
-2. Select `main` branch
-3. Your portfolio will be live at: `https://BeginnerAman.github.io/Portfolio`
+- **Instant Search & Real-Time Filtering** - Filter projects instantly by keyword, tech stack (e.g. Python, POS, Offline), or category.
+- **Glassmorphic Dark UI** - Modern glassmorphic theme with glowing terminal caret and purple accent design tokens.
+- **Dynamic Category Count Badges** - Real-time project counts rendered dynamically for each category.
+- **Production-Grade SEO Infrastructure**:
+  - `robots.txt` and `sitemap.xml` for search engine crawler discovery.
+  - Open Graph (OG) & Twitter Cards with 1200x630 banner preview (`og-image.png`).
+  - Schema.org JSON-LD structured data for Google Search rich snippets (`Person` & `WebSite` graph).
+  - Canonical link tag to prevent duplicate content indexing.
+- **Zero Bloat & Ultra Fast** - Built with 100% vanilla HTML5, CSS3, and modern JavaScript (no heavy runtime framework).
+- **Responsive & Accessible** - Fluid layout adapting to mobile, tablet, and widescreen desktop monitors.
 
 ---
 
-## How to Manage Projects
+## Featured Flagship Repositories
 
-### ADD a New Project
-
-Edit `script.js` and find the `projectsData` array, then add:
-
-```javascript
-{
-    name: "Your Project Name",
-    category: "chat",       // chat, game, utility, webapp, birthday
-    icon: "icon-name",      // Lucide icon name (e.g., "message-circle")
-    description: "Brief description of your project",
-    url: "https://github.com/BeginnerAman/your-repo"
-}
-```
-
-Refresh the page and your project appears instantly.
-
----
-
-### REMOVE a Project
-
-1. Find the project in `script.js`
-2. Delete the entire object
-3. Save the file
-
-That's all! No other changes needed.
-
----
-
-### Categories Available
-
-| Category | Usage | Examples |
-|----------|-------|----------|
-| `chat` | Chat applications | Chat App, Group Chat |
-| `game` | Games and puzzles | Typing Game, Quiz |
-| `utility` | Tools and calculators | Data Wizard, Resume Forge |
-| `webapp` | Web applications | LuxeStay Hotel, Garden Groves |
-| `birthday` | Special projects | Birthday Pages |
+| Project | Type | Description |
+|---|---|---|
+| **[ADrop](https://github.com/BeginnerAman/ADrop)** | P2P Network | 150+ MB/s offline local file sharing over WiFi with QR code & smart clipboard. |
+| **[AirDeck](https://github.com/BeginnerAman/AirDeck)** | Windows Bridge | Wireless controller suite turning smartphones into trackpad, stream deck & webcam. |
+| **[RenameSense](https://github.com/BeginnerAman/RenameSense)** | Windows Utility | Enterprise-grade batch file renamer with sequential regex & 1-click WAL rollback. |
+| **[smart-file-sync](https://github.com/BeginnerAman/smart-file-sync)** | Python Engine | Offline file sync engine with block-level delta transfers & filesystem watcher. |
+| **[VastraFlow](https://github.com/BeginnerAman/VastraFlow)** | Offline POS | Retail POS, barcode billing & inventory management for garment showrooms. |
+| **[StorageOrganizer](https://github.com/BeginnerAman/StorageOrganizer)** | Desktop Utility | Desktop storage optimization & MD5 content deduplication for Windows. |
 
 ---
 
@@ -87,149 +38,51 @@ That's all! No other changes needed.
 
 ```
 Portfolio/
-├── index.html       # Main HTML structure
-├── styles.css       # All styling and animations
-├── script.js        # Project data and interactions
-└── README.md        # This file
+├── index.html           # Semantic HTML5 with complete SEO & JSON-LD
+├── styles.css           # Glassmorphic dark design system & responsive layout
+├── script.js            # Curated projects database, search engine & typing fx
+├── robots.txt           # Search engine crawler permissions
+├── sitemap.xml          # XML sitemap for Google Search Console
+├── og-image.png         # 1200x630 social media sharing preview banner
+├── apple-touch-icon.png # 180x180 iOS/Safari home-screen icon
+└── README.md            # Documentation & project guide
 ```
 
 ---
 
-## Customization
+## How to Manage Projects
 
-### Update Personal Info
+### Add a New Project
+In `script.js`, append an object to `projectsData`:
 
-Edit in `index.html`:
-
-```html
-<!-- Hero Section -->
-<h1 class="hero-title">Hi, I'm <span class="gradient-text">BeginnerAman</span></h1>
-
-<!-- Contact Info -->
-<p>your.email@example.com</p>
-
-<!-- Social Links -->
-<a href="https://github.com/YOUR-USERNAME">GitHub</a>
-<a href="https://twitter.com/YOUR-HANDLE">Twitter</a>
-```
-
-### Change Colors
-
-Edit in `styles.css`:
-
-```css
-:root {
-    --accent-primary: #6c5ce7;      /* Main color */
-    --accent-secondary: #a29bfe;    /* Accent color */
+```javascript
+{
+  name: 'Project Title',
+  category: 'system', // 'system' | 'webapp' | 'utility' | 'creative'
+  featured: true,     // true | false
+  icon: 'zap',        // Lucide icon name
+  description: 'Project summary...',
+  language: 'Python',
+  tags: ['Offline-First', 'Engine', 'Windows'],
+  liveUrl: 'https://beginneraman.github.io/repo-name/',
+  repoUrl: 'https://github.com/BeginnerAman/repo-name'
 }
 ```
 
----
+### Categories Available
 
-## AI Collaboration & Workflow
-
-This portfolio and its projects are built with an **AI-collaborative engineering workflow**, focusing on:
-- Idea-driven product architecture & UX design
-- High-velocity full-stack software development
-- Modern design patterns & responsive layouts
-- Clean code structure & performance optimization
-
----
-
-## Portfolio Stats
-
-- **Total Projects**: 27+
-- **Categories**: 5 (Chat, Games, Utilities, Web Apps, Birthday)
-- **Built with**: HTML5, CSS3, JavaScript
-- **Icons**: Lucide Icons (SVG)
-- **Design**: Modern Dark Theme with Gradients
+| Category Key | Display Name | Examples |
+|---|---|---|
+| `featured` | Featured | Flagship high-impact applications |
+| `system` | Desktop & Systems | AirDeck, RenameSense, smart-file-sync |
+| `webapp` | Web Apps | VastraFlow, Resume Forge Pro, LuxeStay |
+| `utility` | Tools & Utilities | Data Wizard Hub, Milk Rate Calculator |
+| `creative` | Creative | Loopi Motion DP Studio, Fake Hacker Terminal |
 
 ---
 
-## Technologies Used
+## Contact & Links
 
-- **HTML5** - Semantic markup
-- **CSS3** - Advanced styling, animations, gradients
-- **JavaScript** - Dynamic project loading, interactions
-- **Lucide Icons** - Professional SVG icon library
-- **Font Awesome** - Additional icons
-- **Google Fonts** - Inter font family
-
----
-
-## Features Overview
-
-### Filter System
-Click filter buttons to view projects by category:
-- All Projects
-- Chat Apps
-- Games
-- Utilities
-- Web Apps
-- Birthday
-
-### Responsive Navigation
-- Fixed navbar with smooth scroll
-- Hamburger menu for mobile
-- Active link highlighting
-
-### Animations
-- Fade-in effects on scroll
-- Hover animations on cards
-- Smooth transitions throughout
-
-### Mobile Optimization
-- Fully responsive design
-- Touch-friendly buttons
-- Optimized for all screen sizes
-
----
-
-## Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- Mobile browsers (iOS Safari, Chrome Mobile)
-
----
-
-## License
-
-Free to use and modify. Credit to **AI** for assistance.
-
----
-
-## Future Enhancements
-
-- [ ] Dark/Light theme toggle
-- [ ] Project search functionality
-- [ ] Blog section
-- [ ] Contact form integration
-- [ ] Performance optimization
-
----
-
-## Tips
-
-1. **Use Lucide icons for projects** - Professional SVG icons look much better
-2. **Keep descriptions short** - Better readability
-3. **Use descriptive names** - Helps visitors understand projects
-4. **Update contact info** - Make it easy to reach you
-5. **Maintain GitHub links** - Ensure they point to active repos
-
----
-
-## Support
-
-For issues or suggestions, create an issue in the repository or reach out via the contact section.
-
----
-
-**Made with care by Aman Vishwakarma (BeginnerAman)**
-*Powered by AI Assistance*
-
----
-
-Last Updated: August 2, 2026
+- **GitHub**: [@BeginnerAman](https://github.com/BeginnerAman)
+- **Instagram**: [@amanv_data](https://www.instagram.com/amanv_data/)
+- **Email**: avstudy547@gmail.com
