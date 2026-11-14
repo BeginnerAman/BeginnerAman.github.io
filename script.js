@@ -13,7 +13,7 @@ const projectsData = [
     icon: 'zap',
     description: 'Transfer files between phone and PC at 150+ MB/s without internet, cables, or apps to install. Ultra-fast offline local file sharing over WiFi with QR code pairing, smart clipboard, resumable uploads, and server recovery.',
     language: 'JavaScript',
-    tags: ['Offline-First', 'P2P Sharing', 'WebSockets'],
+    tags: ['Offline-First', '150+ MB/s', 'P2P Transfer', 'WebSockets'],
     liveUrl: 'https://beginneraman.github.io/ADrop/',
     repoUrl: 'https://github.com/BeginnerAman/ADrop'
   },
@@ -24,7 +24,7 @@ const projectsData = [
     icon: 'radio',
     description: 'Wireless hardware companion bridge and modular controller suite for Windows. Turn any smartphone or tablet into a high-performance trackpad, macro stream deck, numeric keypad, presentation remote, virtual webcam, and studio microphone without installing any mobile apps.',
     language: 'Python',
-    tags: ['Windows Engine', 'Wireless Bridge', 'Hardware Control'],
+    tags: ['Python Engine', 'Windows Bridge', 'Wireless Remote', 'Hardware Control'],
     liveUrl: 'https://beginneraman.github.io/AirDeck/',
     repoUrl: 'https://github.com/BeginnerAman/AirDeck'
   },
@@ -35,7 +35,7 @@ const projectsData = [
     icon: 'file-edit',
     description: 'Enterprise-grade, safe, and offline-first batch file renamer for Windows 10 & 11 with dynamic templates, sequential regex pipelines, and 1-click WAL transaction rollback for absolute data protection.',
     language: 'HTML/JS',
-    tags: ['Offline-First', 'WAL Rollback', 'Regex Pipeline'],
+    tags: ['Offline-First', 'WAL Rollback', 'Regex Pipeline', 'Batch Renamer'],
     liveUrl: 'https://beginneraman.github.io/RenameSense/',
     repoUrl: 'https://github.com/BeginnerAman/RenameSense'
   },
@@ -46,7 +46,7 @@ const projectsData = [
     icon: 'refresh-cw',
     description: 'High-performance, 100% offline file synchronization engine for Windows with block-level delta transfers, real-time filesystem watcher, USB auto-detect, and atomic safe writes.',
     language: 'Python',
-    tags: ['Delta Transfers', 'Filesystem Watcher', 'Atomic Writes'],
+    tags: ['Python Engine', 'Delta Sync', 'Filesystem Watcher', 'Atomic Writes'],
     liveUrl: 'https://beginneraman.github.io/smart-file-sync/',
     repoUrl: 'https://github.com/BeginnerAman/smart-file-sync'
   },
@@ -57,7 +57,7 @@ const projectsData = [
     icon: 'shopping-bag',
     description: '100% Offline POS, barcode billing, and inventory management software designed for retail clothing shops, garment stores, and saree showrooms with thermal receipt printing.',
     language: 'HTML/JS',
-    tags: ['Offline POS', 'Barcode Billing', 'Inventory Engine'],
+    tags: ['Offline POS', 'Barcode Billing', 'Inventory Engine', 'Thermal Print'],
     liveUrl: 'https://beginneraman.github.io/VastraFlow/',
     repoUrl: 'https://github.com/BeginnerAman/VastraFlow'
   },
@@ -70,7 +70,7 @@ const projectsData = [
     icon: 'hard-drive',
     description: 'Intelligent desktop storage optimization, MD5 deduplication, and automated organization for Windows. 100% offline, privacy-first desktop utility.',
     language: 'Python',
-    tags: ['MD5 Deduplication', 'Storage Optimization', 'Windows Utility'],
+    tags: ['Python Utility', 'MD5 Deduplication', 'Storage Optimization'],
     liveUrl: 'https://beginneraman.github.io/StorageOrganizer/',
     repoUrl: 'https://github.com/BeginnerAman/StorageOrganizer'
   },
@@ -231,23 +231,14 @@ function createProjectCard(project) {
   iconEl.setAttribute('data-lucide', project.icon);
   iconWrapper.appendChild(iconEl);
 
-  const badgesContainer = document.createElement('div');
-  badgesContainer.className = 'badges-container';
+  header.appendChild(iconWrapper);
 
   if (project.featured) {
     const featBadge = document.createElement('span');
     featBadge.className = 'featured-badge';
     featBadge.innerHTML = '<i class="fas fa-star"></i> Featured';
-    badgesContainer.appendChild(featBadge);
+    header.appendChild(featBadge);
   }
-
-  const badge = document.createElement('span');
-  badge.className = 'tech-badge';
-  badge.textContent = project.language;
-  badgesContainer.appendChild(badge);
-
-  header.appendChild(iconWrapper);
-  header.appendChild(badgesContainer);
 
   // ── Card Body ──
   const body = document.createElement('div');
