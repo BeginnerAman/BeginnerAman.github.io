@@ -258,10 +258,10 @@ img {
 .hero-subtitle {
   font-size: 1.25rem;
   color: var(--text-secondary);
-  margin-bottom: 12px;
-  min-height: 2rem;
-  display: flex;
-  align-items: center;
+  margin-bottom: 16px;
+  min-height: 2.2rem;
+  line-height: 1.5;
+  overflow-wrap: break-word;
 }
 
 .subtitle-handle {
@@ -275,10 +275,10 @@ img {
 .typing-cursor {
   display: inline-block;
   width: 3px;
-  height: 1.25em;
+  height: 1.15em;
   background: var(--accent-secondary);
-  margin-left: 4px;
-  vertical-align: middle;
+  margin-left: 3px;
+  vertical-align: -0.15em;
   border-radius: 2px;
   box-shadow: 0 0 10px rgba(162, 155, 254, 0.85);
   animation: blink 0.8s ease-in-out infinite;
@@ -955,6 +955,12 @@ img {
     font-size: 2rem;
   }
 
+  .hero-subtitle {
+    font-size: 1.15rem;
+    min-height: 3.4rem;
+    line-height: 1.45;
+  }
+
   .about-content {
     grid-template-columns: 1fr;
   }
@@ -983,6 +989,12 @@ img {
 @media (max-width: 480px) {
   .container {
     padding: 0 16px;
+  }
+
+  .hero-subtitle {
+    font-size: 1.05rem;
+    min-height: 3.2rem;
+    line-height: 1.45;
   }
 
   .hero-buttons {
