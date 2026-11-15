@@ -85,4 +85,4 @@ In `script.js`, append an object to `projectsData`:
 
 - **GitHub**: [@BeginnerAman](https://github.com/BeginnerAman)
 - **Instagram**: [@amanv_data](https://www.instagram.com/amanv_data/)
-- **Email**: avstudy547@gmail.com
+- **Email**: amanvishwakarma.data@gmail.com
