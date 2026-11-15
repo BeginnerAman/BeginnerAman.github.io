@@ -45,6 +45,39 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Custom Themed Selection (Obsidian Purple) */
+::selection {
+  background: rgba(108, 92, 231, 0.45);
+  color: #ffffff;
+}
+
+::-moz-selection {
+  background: rgba(108, 92, 231, 0.45);
+  color: #ffffff;
+}
+
+/* Prevent accidental text selection and mobile touch popups on UI chrome */
+.navbar,
+.hero-greeting,
+.hero-title,
+.hero-subtitle,
+.btn,
+.filter-btn,
+.card-header,
+.card-footer,
+.stat-number,
+.stat-label,
+.skill-card,
+.social-link,
+.tag,
+.search-clear-btn {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 html {
