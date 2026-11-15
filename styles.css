@@ -350,6 +350,7 @@ img {
   border: none;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   font-family: 'Inter', sans-serif;
 }
@@ -988,6 +989,13 @@ img {
     font-size: 2rem;
   }
 
+  .subtitle-handle {
+    display: block;
+    margin-left: 0;
+    margin-top: 6px;
+    font-size: 0.5em;
+  }
+
   .hero-subtitle {
     font-size: 1.15rem;
     min-height: 3.4rem;
@@ -1024,6 +1032,15 @@ img {
     padding: 0 16px;
   }
 
+  .hero-greeting {
+    font-size: 0.95rem;
+    letter-spacing: 1.5px;
+  }
+
+  .hero-title {
+    font-size: 1.85rem;
+  }
+
   .hero-subtitle {
     font-size: 1.05rem;
     min-height: 3.2rem;
@@ -1032,6 +1049,13 @@ img {
 
   .hero-buttons {
     flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    justify-content: center;
   }
 
   .skills-grid {
