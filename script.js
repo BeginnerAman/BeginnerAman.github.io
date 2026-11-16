@@ -52,11 +52,11 @@ const projectsData = [
   },
   {
     name: 'VastraFlow - Retail POS & Inventory',
-    category: 'webapp',
+    category: 'system',
     featured: true,
     icon: 'shopping-bag',
     description: '100% Offline POS, barcode billing, and inventory management software designed for retail clothing shops, garment stores, and saree showrooms with thermal receipt printing.',
-    language: 'HTML/JS',
+    language: 'Desktop App',
     tags: ['Offline POS', 'Barcode Billing', 'Inventory Engine', 'Thermal Print'],
     liveUrl: 'https://beginneraman.github.io/VastraFlow/',
     repoUrl: 'https://github.com/BeginnerAman/VastraFlow'
