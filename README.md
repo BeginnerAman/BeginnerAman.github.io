@@ -2,7 +2,7 @@
 
 A high-performance, responsive portfolio website showcasing 35+ public projects, offline systems, and web applications. Built with modern vanilla web technologies and AI-collaborative engineering.
 
-**Live Website**: [https://beginneraman.github.io/Portfolio/](https://beginneraman.github.io/Portfolio/)
+**Live Website**: [https://beginneraman.github.io/](https://beginneraman.github.io/)
 
 ---
 

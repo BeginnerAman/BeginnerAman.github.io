@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://beginneraman.github.io/Portfolio/sitemap.xml
+Sitemap: https://beginneraman.github.io/sitemap.xml
