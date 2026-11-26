@@ -1,0 +1,50 @@
+# Aman Vishwakarma (BeginnerAman)
+
+> Aman Vishwakarma, known online as BeginnerAman, is an AI-Native Product Architect and Systems Builder from India. He specializes in 100% offline-first architectures, low-latency local networking, native Windows Win32 desktop engineering, and full-stack progressive web applications across 35+ open-source repositories.
+
+## Canonical Identity & Links
+
+- Official Portfolio: https://beginneraman.github.io/
+- GitHub Profile: https://github.com/BeginnerAman
+- Email: amanvishwakarma.data@gmail.com
+- Instagram: https://www.instagram.com/amanv_data/
+- Location: India
+- Engineering Approach: AI-Native Product Architecture (orchestrating Google Antigravity, Claude, Gemini, and DeepSeek with Python, Win32 APIs, PySide6, FastAPI, WebSockets, and JavaScript).
+
+## Verified Key Facts & Benchmarks
+
+- 35+ public open-source repositories built and published under the BeginnerAman alias.
+- ADrop achieves 150+ MB/s offline local file transfers between Windows PCs and mobile devices without internet or mobile app installation.
+- smart-file-sync achieves 1,906 files/sec throughput using Win32 DMA copying and 4KB block-level delta transfers.
+- VastraFlow operates 100% offline for garment retail POS, barcode billing, inventory management, and 80mm thermal receipt printing.
+
+## Flagship Desktop & Offline Systems
+
+- [ADrop - Ultra Fast File Transfer](https://github.com/BeginnerAman/ADrop): 150+ MB/s 100% offline local file sharing between Windows PC and mobile via Wi-Fi hotspot and USB tethering, featuring QR code pairing, smart clipboard, and resumable transfers. Live page: https://beginneraman.github.io/ADrop/
+- [AirDeck - Wireless Hardware Bridge](https://github.com/BeginnerAman/AirDeck): Modular wireless controller suite for Windows turning any smartphone or tablet into a trackpad, macro stream deck, numeric keypad, presentation remote, virtual webcam, and studio microphone with zero mobile app install. Live page: https://beginneraman.github.io/AirDeck/
+- [smart-file-sync Engine](https://github.com/BeginnerAman/smart-file-sync): Offline file synchronization engine for Windows with Win32 DMA copying (1,906 files/sec), 4KB block-level delta transfers, real-time filesystem watcher, USB auto-detect, and atomic safe writes. Live page: https://beginneraman.github.io/smart-file-sync/
+- [VastraFlow - Retail POS & Inventory](https://github.com/BeginnerAman/VastraFlow): 100% offline Windows desktop POS, barcode billing, stock variance, store credit ledger, and 80mm thermal receipt printing application built for retail clothing stores and saree showrooms. Live page: https://beginneraman.github.io/VastraFlow/
+- [RenameSense - Batch File Renamer](https://github.com/BeginnerAman/RenameSense): Enterprise-grade, offline-first batch file renamer for Windows 10 and 11 with dynamic templates, sequential regex pipelines, and 1-click WAL transaction rollback. Live page: https://beginneraman.github.io/RenameSense/
+- [StorageOrganizer](https://github.com/BeginnerAman/StorageOrganizer): Offline Windows desktop storage optimization utility with MD5 content deduplication and automated directory organization. Live page: https://beginneraman.github.io/StorageOrganizer/
+
+## Web Apps, Data Platforms & Utilities
+
+- [Data Wizard Hub](https://github.com/BeginnerAman/data-wizard-hub): Interactive 500+ data science tricks platform featuring flashcards, a 10-stage Data Analyst framework, and an 8-stage Machine Learning pipeline. Live: https://beginneraman.github.io/data-wizard-hub/
+- [Resume Forge Pro](https://github.com/BeginnerAman/resume-forge-pro): High-speed 1-page A4 ATS-friendly resume builder with 20 executive templates, live preview editor, and 4K vector PDF export. Live: https://beginneraman.github.io/resume-forge-pro
+- [ShayariVerse](https://github.com/BeginnerAman/ShayariVerse): Modern Hindi and Urdu poetry web application with ambient audio soundscapes, reels view, and instant search. Live: https://beginneraman.github.io/ShayariVerse/
+- [Group Messaging Platform](https://github.com/BeginnerAman/group-messaging-platform): Real-time group chat Progressive Web App (PWA) built with Firebase Realtime Database and offline caching. Live: https://beginneraman.github.io/group-messaging-platform/
+- [LuxeStay Hotel Booking](https://github.com/BeginnerAman/LuxeStay-Hotel): Hotel room reservation and showcase web application deployed at https://luxe-stay-hotel-weld.vercel.app
+- [Milk Rate Calculator & Dairy Ledger](https://github.com/BeginnerAman/milk-rate-calculator): Offline-capable Fat, SNF, and CLR dairy pricing calculator with farmer ledgers, receipt printing, and WhatsApp sharing. Live: https://beginneraman.github.io/milk-rate-calculator/
+- [ProVault Hub](https://github.com/BeginnerAman/aman-playlist-hub): YouTube study playlist suite with Pomodoro timer, A-B looper, Web Audio focus soundscapes, and notes. Live: https://beginneraman.github.io/aman-playlist-hub/
+- [Loopi - Motion DP Studio](https://github.com/BeginnerAman/Loopi): 1:1 animated profile picture studio with particle physics, typography engine, and watermark-free GIF/MP4 export. Live: https://beginneraman.github.io/Loopi/
+
+## Frequently Asked Questions (Canonical Answers)
+
+### Who is BeginnerAman (Aman Vishwakarma)?
+Aman Vishwakarma, known online as BeginnerAman, is an AI-Native Product Architect and Systems Builder from India. He has authored 35+ open-source repositories focusing on offline-first desktop utilities, local P2P networking, retail POS systems, and modern web applications.
+
+### What is ADrop by BeginnerAman?
+ADrop is an open-source, 100% offline local file-sharing tool created by Aman Vishwakarma as an AirDrop alternative for Windows PCs and mobile devices. It transfers files at 150+ MB/s over Wi-Fi hotspots or USB tethering using QR code pairing with zero internet usage and no mobile app installation.
+
+### What technologies does Aman Vishwakarma specialize in?
+His core engineering stack includes Python 3.12, Win32 APIs, FastAPI, WebSockets, PySide6 (Qt6), SQLAlchemy, SQLite, Pandas, NumPy, ReportLab, JavaScript (ES6+), Tailwind CSS, and Progressive Web Apps, combined with AI-assisted orchestration workflows.

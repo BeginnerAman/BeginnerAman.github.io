@@ -567,7 +567,7 @@ function initTypingEffect() {
   if (!typedTextSpan) return;
 
   const textArray = [
-    'Idea-First Developer & Product Architect',
+    'AI-Native Product Architect & Systems Builder',
     'Creator of ADrop - 150+ MB/s Offline File Transfer',
     'Creator of AirDeck - Wireless Windows Hardware Bridge',
     'Architect of VastraFlow - Offline POS & Retail Billing',
