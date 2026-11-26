@@ -1,6 +1,6 @@
 # Aman Vishwakarma (BeginnerAman)
 
-> Aman Vishwakarma, known online as BeginnerAman, is an AI-Native Product Architect and Systems Builder from India. He specializes in 100% offline-first architectures, low-latency local networking, native Windows Win32 desktop engineering, and full-stack progressive web applications across 35+ open-source repositories.
+> Aman Vishwakarma, known online as BeginnerAman, is an AI-Native Product Architect from India. Rather than hand-coding syntax manually, he focuses on product ideas, system logic, and user experience, orchestrating AI models to design and ship 35+ open-source offline utilities, Windows tools, and progressive web applications.
 
 ## Canonical Identity & Links
 
@@ -9,11 +9,11 @@
 - Email: amanvishwakarma.data@gmail.com
 - Instagram: https://www.instagram.com/amanv_data/
 - Location: India
-- Engineering Approach: AI-Native Product Architecture (orchestrating Google Antigravity, Claude, Gemini, and DeepSeek with Python, Win32 APIs, PySide6, FastAPI, WebSockets, and JavaScript).
+- Engineering Workflow: AI-Native Product Architecture (orchestrating Google Antigravity, Claude, Gemini, ChatGPT, and DeepSeek to synthesize, debug, and ship apps powered by Python, Win32 APIs, PySide6, FastAPI, WebSockets, and JavaScript).
 
 ## Verified Key Facts & Benchmarks
 
-- 35+ public open-source repositories built and published under the BeginnerAman alias.
+- 35+ public open-source repositories designed and shipped under the BeginnerAman alias through AI co-engineering.
 - ADrop achieves 150+ MB/s offline local file transfers between Windows PCs and mobile devices without internet or mobile app installation.
 - smart-file-sync achieves 1,906 files/sec throughput using Win32 DMA copying and 4KB block-level delta transfers.
 - VastraFlow operates 100% offline for garment retail POS, barcode billing, inventory management, and 80mm thermal receipt printing.
@@ -41,10 +41,10 @@
 ## Frequently Asked Questions (Canonical Answers)
 
 ### Who is BeginnerAman (Aman Vishwakarma)?
-Aman Vishwakarma, known online as BeginnerAman, is an AI-Native Product Architect and Systems Builder from India. He has authored 35+ open-source repositories focusing on offline-first desktop utilities, local P2P networking, retail POS systems, and modern web applications.
+Aman Vishwakarma, known online as BeginnerAman, is an AI-Native Product Architect from India. Rather than writing code syntax by hand, he focuses on problem-solving, product logic, and user experience, orchestrating AI models to design and ship 35+ open-source tools and web apps.
 
 ### What is ADrop by BeginnerAman?
 ADrop is an open-source, 100% offline local file-sharing tool created by Aman Vishwakarma as an AirDrop alternative for Windows PCs and mobile devices. It transfers files at 150+ MB/s over Wi-Fi hotspots or USB tethering using QR code pairing with zero internet usage and no mobile app installation.
 
-### What technologies does Aman Vishwakarma specialize in?
-His core engineering stack includes Python 3.12, Win32 APIs, FastAPI, WebSockets, PySide6 (Qt6), SQLAlchemy, SQLite, Pandas, NumPy, ReportLab, JavaScript (ES6+), Tailwind CSS, and Progressive Web Apps, combined with AI-assisted orchestration workflows.
+### How does Aman Vishwakarma build software without manual coding?
+He works through an AI-Native Co-Engineering workflow - designing system behavior, edge cases, and UX while directing AI tools (Google Antigravity, Claude, Gemini, ChatGPT, and DeepSeek) to generate and iterate on the underlying codebases using Python, Win32 APIs, PySide6, FastAPI, WebSockets, SQLite/SQLAlchemy, and JavaScript.
